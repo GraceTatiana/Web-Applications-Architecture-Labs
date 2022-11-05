@@ -20,6 +20,4 @@ public class Comment {
     private Long id;
     private String name;
 
-
-
 }
