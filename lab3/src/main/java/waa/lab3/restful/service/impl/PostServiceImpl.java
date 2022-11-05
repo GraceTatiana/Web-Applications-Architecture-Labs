@@ -3,6 +3,7 @@ package waa.lab3.restful.service.impl;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import waa.lab3.restful.entity.dto.CommentDto;
 import waa.lab3.restful.entity.dto.PostDto;
 import waa.lab3.restful.entity.dto.versioning.Comment;
 import waa.lab3.restful.entity.dto.versioning.Post;
@@ -84,9 +85,12 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public List<Comment> getCommentsOfThisPost(Long id) {
+    public List<CommentDto> getCommentsOfThisPost(Long id) {
         Post p = postRepo.findById(id).get();
-        return p.getComments();
+        return p.getComments()
+                .stream()
+                .map(comment -> modelMapper.map(comment, CommentDto.class))
+                .collect(Collectors.toList());
     }
 
     @Override

@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
+import waa.lab3.restful.entity.dto.CommentDto;
 import waa.lab3.restful.entity.dto.PostDto;
 import waa.lab3.restful.entity.dto.versioning.Comment;
 import waa.lab3.restful.entity.dto.versioning.Post;
@@ -76,7 +77,7 @@ public class PostController {
     }
 
     @GetMapping("/{id}/comment")
-    public List<Comment> getCommentsOfThisPost(@PathVariable("id") Long id){
+    public List<CommentDto> getCommentsOfThisPost(@PathVariable("id") Long id){
         return postService.getCommentsOfThisPost(id);
     }
 

@@ -1,5 +1,6 @@
 package waa.lab3.restful.service;
 
+import waa.lab3.restful.entity.dto.CommentDto;
 import waa.lab3.restful.entity.dto.PostDto;
 import waa.lab3.restful.entity.dto.versioning.Comment;
 import waa.lab3.restful.entity.dto.versioning.Post;
@@ -21,7 +22,7 @@ public interface PostService {
 
     void addCommentToPost(Long id, Comment comment);
 
-    List<Comment> getCommentsOfThisPost(Long id);
+    List<CommentDto> getCommentsOfThisPost(Long id);
 
     List<Post> findMatchingTitle(String title);
 }
