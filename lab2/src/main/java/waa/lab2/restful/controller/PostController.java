@@ -13,7 +13,7 @@ import waa.lab2.restful.service.PostService;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/posts/")
+@RequestMapping("api/posts")
 public class PostController {
 
     private final PostService postService;
@@ -68,13 +68,13 @@ public class PostController {
         }
     }
 
-    @GetMapping(value = "/post/header", headers = "P-API-VERSION=1")
-    public Post headerV1(){
-        return new Post(124L,"Food for thought","Read my book!!", "Anon");
-    }
-
-    @GetMapping(value = "/post/header", headers = "P-API-VERSION=2")
-    public PostV2 headerV2(){
-        return new PostV2(114L,"Food for thought2","Read my book, too!!", "Anon2");
-    }
+//    @GetMapping(value = "/post/header", headers = "P-API-VERSION=1")
+//    public Post headerV1(){
+//        return new Post(124L,"Food for thought","Read my book!!", "Anon");
+//    }
+//
+//    @GetMapping(value = "/post/header", headers = "P-API-VERSION=2")
+//    public PostV2 headerV2(){
+//        return new PostV2(114L,"Food for thought2","Read my book, too!!", "Anon2");
+//    }
 }

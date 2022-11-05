@@ -24,7 +24,7 @@ INSERT INTO post (id, title, content, author, id_Post)
 VALUES (111, 'iPhone', 'i like iPhones','John', 111);
 
 INSERT INTO post (id, title, content, author, id_Post)
-VALUES (112, 'iPad', 'i bought it for USD 900', 'Gabe', 111);
+VALUES (112, 'iPad', 'i bought it for USD 900', 'Gabe', 112);
 
 INSERT INTO post (id, title, content, author, id_Post)
-VALUES (113, 'Pen', ' pens are boring!!','Singh', 112);
+VALUES (113, 'Pen', ' pens are boring!!','Singh', 113);

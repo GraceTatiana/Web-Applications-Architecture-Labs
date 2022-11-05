@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import waa.lab2.restful.entity.dto.PostDto;
 import waa.lab2.restful.entity.dto.UserDto;
+import waa.lab2.restful.entity.dto.versioning.Post;
 import waa.lab2.restful.service.UserService;
 
 import java.util.List;
@@ -34,9 +35,15 @@ public class UserController {
        return userService.findAll();
     }
 
-    @GetMapping("/{id}/post")
-    public List<PostDto> findAllEqualTo(@PathVariable(required = false) Long id){
-        return userService.findAllEqualTo(id);
+    @GetMapping("/{id}/posts")
+    public List<PostDto> getAllUserPosts(@PathVariable Long id){
+        return userService.getAllUserPosts(id);
+
+    }
+
+    @PostMapping("/{id}/posts")
+    public Post createUserPost(@PathVariable Long id,@RequestBody PostDto p){
+        return userService.createUserPost(id, p);
 
     }
 }
