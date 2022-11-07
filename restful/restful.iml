@@ -25,6 +25,15 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-hateoas:2.7.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.hateoas:spring-hateoas:1.5.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.23" level="project" />
