@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import waa.lab4.restful.annotation.ExecutionTime;
 import waa.lab4.restful.entity.dto.PostDto;
 import waa.lab4.restful.entity.dto.UserDto;
 import waa.lab4.restful.entity.dto.versioning.Post;
@@ -33,6 +34,7 @@ public class UserController {
     }
 
     @GetMapping
+    @ExecutionTime
     public List<UserDto> findAll(){
        return userService.findAll();
     }
