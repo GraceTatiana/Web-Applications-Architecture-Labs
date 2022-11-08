@@ -5,35 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09a08029-d8be-4058-852c-4417f410e95c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/RestfulApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/controller/PostController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/entity/dto/PostDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/entity/dto/UserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/entity/dto/versioning/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/entity/dto/versioning/PostV2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/entity/dto/versioning/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/helper/ListMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/repo/PostRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/repo/UserRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/service/PostService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/service/impl/PostServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waa/lab2/restful/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/waa/lab2/Lab2ApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../restful/restful.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../restful/restful.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667503669823</updated>
       <workItem from="1667503671129" duration="36807000" />
-      <workItem from="1667611030517" duration="1632000" />
+      <workItem from="1667611030517" duration="1047000" />
     </task>
     <servers />
   </component>

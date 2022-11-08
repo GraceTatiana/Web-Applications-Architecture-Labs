@@ -1,4 +1,4 @@
-package waa.lab4.restful.entity.dto;
+package waa.lab4.restful.entity.dto.versioning;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,7 +14,8 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder
 public class Logger {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long transactionId;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dateTime;
