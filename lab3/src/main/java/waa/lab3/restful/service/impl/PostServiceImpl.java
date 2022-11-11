@@ -36,13 +36,18 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public PostDto findById(Long id) {
-        List<Post> posts = postRepo.findAll();
-             return posts
-                     .stream()
-                     .map(p -> modelMapper.map(p, PostDto.class))
-                     .filter(p -> p.getId() ==id)
-                     .findFirst()
-                     .orElse(null);
+
+        var post = postRepo.findById(id);
+
+        return modelMapper.map(post, PostDto.class);
+
+//        List<Post> posts = postRepo.findAll();
+//             return posts
+//                     .stream()
+//                     .map(p -> modelMapper.map(p, PostDto.class))
+//                     .filter(p -> p.getId() ==id)
+//                     .findFirst()
+//                     .orElse(null);
     }
 
 
