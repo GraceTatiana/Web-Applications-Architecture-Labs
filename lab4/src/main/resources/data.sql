@@ -28,3 +28,6 @@ VALUES (212, 'iPad', 'i bought it for USD 900', 'Gabe', 111);
 
 INSERT INTO post (id, title, content, author,  id_user)
 VALUES (213, 'Pen', ' pens are boring!!','Singh', 112);
+
+INSERT INTO post (id, title, content, author,  id_user)
+VALUES (214, 'Winter', 'winter is coming!!','John snow', 113);

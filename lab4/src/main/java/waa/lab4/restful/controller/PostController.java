@@ -14,7 +14,8 @@ import waa.lab4.restful.service.PostService;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/posts/")
+@RequestMapping("api/v1")
+@CrossOrigin(origins = "*")
 public class PostController {
 
     private final PostService postService;
@@ -33,7 +34,7 @@ public class PostController {
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping
+    @PostMapping("/posts")
     public void save(@RequestBody PostDto p){
         postService.save(p);
     }
@@ -50,11 +51,18 @@ public class PostController {
         postService.update(id, p);
     }
 
+//    @ResponseStatus(HttpStatus.OK)
+//    @GetMapping
+//    public List<PostDto> getAll(@RequestParam(value = "filter", required = false) String author){
+//        if (author.equals(null)) return postService.findAll();
+//        return postService.findAllEqualTo(author);
+//    }
+
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping
-    public List<PostDto> getAll(@RequestParam(value = "filter", required = false) String author){
-        if (author.equals(null)) return postService.findAll();
-        return postService.findAllEqualTo(author);
+    @GetMapping("/posts")
+    public List<PostDto> getAll(){
+//        if (author.equals(null)) return postService.findAll();
+        return postService.findAll();
     }
 
     @GetMapping(value = {
