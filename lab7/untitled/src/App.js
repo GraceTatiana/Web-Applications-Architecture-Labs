@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-// import './pages/Dashboard'
-import Dashboard from './pages/Dashboard';
+import "./App.css";
+import Dashboard from "./pages/Dashboard";
+import React from "react";
 
 function App() {
   return (
-    <div>
-      <Dashboard/>
+    <div className="App">
+      <Dashboard />
+
+      {/* <HooksLearn /> */}
     </div>
   );
 }
